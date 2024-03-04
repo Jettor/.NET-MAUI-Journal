@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DziennikMaksym4.MainPage">
+    
+    <ContentPage.Resources>
+        <StyleSheet Source="/Resources/Styles/styles.css" />
+    </ContentPage.Resources>
+    
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="Dziennik Maksym" StyleClass="Headbar"/>
+        </Grid>
+    </Shell.TitleView>
+
+
+    <ScrollView>
+        <StackLayout x:Name="fileStackLayout" Padding="10" > 
+
+            <Button
+     x:Name="DodajKlase"
+     StyleClass="button"
+     Text="Dodaj klasę"
+     SemanticProperties.Hint="Utworzenie nowej klasy"
+     Clicked="OnNewClass"
+     HorizontalOptions="CenterAndExpand" />
+            <Button 
+         x:Name="restart"
+         StyleClass="button"
+         Text="Odśwież" 
+         Clicked="OnReloadClicked"
+         HorizontalOptions="CenterAndExpand"/>
+            <!-- File buttons will be added here dynamically -->
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

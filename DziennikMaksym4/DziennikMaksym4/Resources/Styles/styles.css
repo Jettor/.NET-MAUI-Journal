@@ -1,0 +1,21 @@
+.Headbar {
+    background-color: #B83B5E;
+    font-family: Bahnschrift;
+    color: #F9ED69;
+    font-size:large;
+}
+#load {
+    background-color: #B83B5E;
+    font-family: Bahnschrift;
+    color: #F9ED69;
+    font-size: large;
+}
+^StackLayout {
+    background-color: #F9ED69;
+}
+^Button {
+    background-color: #F08A5D;
+    font-family: Bahnschrift;
+    color: #6A2C70;
+    font-size: medium;
+}

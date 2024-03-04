@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DziennikMaksym4.NewPage1"
+             Title="Edycja">
+    <ContentPage.Resources>
+        <StyleSheet Source="/Resources/Styles/styles.css" />
+    </ContentPage.Resources>
+
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="Edycja klasy" StyleClass="Headbar"/>
+        </Grid>
+    </Shell.TitleView>
+
+    <StackLayout
+x:Name="stackLayout">
+        <Button
+    x:Name="DodajUcznia"
+    Text="Dodaj Ucznia"
+    Clicked="OnNewStudent"
+    HorizontalOptions="CenterAndExpand"/>
+        <Button
+     x:Name="LosujUcznia"
+     Text="Losuj ucznia"
+     Clicked="ShowRandomStudent"
+     HorizontalOptions="CenterAndExpand"/>
+        <Button
+    x:Name="ToMainPage"
+    Text="Wróć"
+    Clicked="Wroc"
+    HorizontalOptions="CenterAndExpand"/>
+        <VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </StackLayout>
+</ContentPage>
